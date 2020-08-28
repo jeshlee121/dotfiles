@@ -27,6 +27,8 @@ set completeopt=menuone,longest
 set shortmess+=c
 " Show line numbers
 set number
+" Enable scrolling with scroll wheel
+set mouse=a
 
 " Navigate the complete menu items like CTRL+n / CTRL+p would.
 inoremap <expr> <Down> pumvisible() ? "<C-n>" :"<Down>"
