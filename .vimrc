@@ -7,6 +7,9 @@ Plug 'majutsushi/tagbar'
 " Automatically show Vim's complete menu while typing
 Plug 'vim-scripts/AutoComplPop'
 
+" Autocomplete brackets, parens, quotes in pair
+Plug 'jiangmiao/auto-pairs'
+
 Plug 'vim-python/python-syntax'
 
 function! BuildYCM(info)
