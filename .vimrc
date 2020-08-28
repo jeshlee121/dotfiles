@@ -11,6 +11,7 @@ Plug 'vim-python/python-syntax'
 call plug#end()
 
 set completeopt=menuone,longest
+" don't give |ins-completion-menu| messages.
 set shortmess+=c
 
 " Navigate the complete menu items like CTRL+n / CTRL+p would.
@@ -22,4 +23,6 @@ inoremap <expr> <Right> pumvisible() ? "<C-y>" : "<Right>"
 inoremap <expr> <CR> pumvisible() ? "<C-y>" :"<CR>"
 
 " Cancel the complete menu item like CTRL+e would.
-inoremap <expr> <Left> pumvisible() ? "<C-e>" : "<Left>"
+inoremap <expr> <Left> pumvisible() ? "<C-e>" : "<Left>"i
+
+highlight Pmenu ctermbg=gray guibg=gray
